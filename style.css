@@ -83,9 +83,18 @@ label {
 }
 
 input {
-    height: 3vh;
+    height: 3.5vh;
     border-color: rgba(0,0,0,0.2);
     border-radius: 5px;
+}
+
+input:focus {
+    outline-color: rgb(90, 124, 236);
+    box-shadow: 0px 4px 2px rgb(0 0 0 / 0.1);;
+}
+
+input:user-invalid {
+    border-color: red;
 }
 
 #create-account {
@@ -99,7 +108,7 @@ input {
     gap: 2vh;
 }
 
-#create-account > button {
+#create-account > input {
     color: white;
     background-color: #596D48;
 
@@ -114,6 +123,7 @@ input {
     border: none;
 
     width: 17vw;
+    height: 4vw;
 }
 
 #create-account > p {
